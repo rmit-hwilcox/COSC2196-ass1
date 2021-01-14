@@ -36,4 +36,5 @@
 
 .sidenav1 .accordion-button:focus {
   boder-color: none;
+  box-shadow: none;
 }
