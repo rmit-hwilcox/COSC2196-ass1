@@ -19,3 +19,9 @@
 .accordion-header a {
   text-decoration: none;
 }
+.sidenav1 .accordion-button {
+  color: unset;
+}
+.accordion-item a {
+    text-decoration: unset;
+}
