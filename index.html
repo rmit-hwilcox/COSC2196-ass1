@@ -8,13 +8,13 @@
     <title>Title</title>
   </head>
   <body>
-    <div class="sidenav1">
-          <nav class="nav flex-column">
+    <div class="sidenav1" id="funkynav">
+          <nav class="nav flex-column accordian">
             <a class="nav-link" href="#">Personal Information</a>
             <a class="nav-link" href="#">Interest in IT</a>
             <a class="nav-link" href="#">Ideal Job</a>
-            <a class="nav-link dropdown-btn" href="#">Personal Profile</a>
-            <div class="dropdown-container">
+            <a data-toggle="collapse" data-target="#collapseOne" class="nav-link dropdown-btn" href="#">Personal Profile</a>
+            <div id="collapseOne" data-parent="#funknav" class="dropdown-container collapse">
               <a class="nav-link" href="#">Link 1</a>
               <a class="nav-link "href="#">Link 2</a>
               <a class="nav-link" href="#">Link 3</a>
