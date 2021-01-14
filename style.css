@@ -27,6 +27,7 @@
   border: none;
   padding: 4px 4px 4px 16px;
 }
+
 .sidenav1 .accordion-item a {
     text-decoration: unset;
 }
@@ -42,4 +43,8 @@
 
 .sidenav1 .accordion-collapse {
   border: none;
+}
+
+.profimg {
+  border-raius: 50%;
 }
