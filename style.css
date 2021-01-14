@@ -25,6 +25,7 @@
 .sidenav1 .accordion-button {
   color: unset;
   border: none;
+  padding: 4px 4px 4px 16px;
 }
 .sidenav1 .accordion-item a {
     text-decoration: unset;
@@ -37,4 +38,8 @@
 .sidenav1 .accordion-button:focus {
   boder-color: none;
   box-shadow: none;
+}
+
+.sidenav1 .accordion-collapse {
+  border: none;
 }
