@@ -57,3 +57,7 @@
 .sidenav1 .nav-link {
   padding: 6px 4px 6px 40px;
 }
+
+.scrollTo {
+  height: 100vh;
+}
