@@ -33,3 +33,7 @@
 .sidenav1 .accordion-button:not(.collapsed) {
   background-color: unset;
 }
+
+.sidenav1 .accordion-button:focus {
+  boder-color: none;
+}
