@@ -23,6 +23,10 @@
   color: unset;
   border: none;
 }
-.accordion-item a {
+.sidenav1 .accordion-item a {
     text-decoration: unset;
+}
+
+.sidenav1 .accordion-button:not(.collapsed) {
+  background-color: unset;
 }
