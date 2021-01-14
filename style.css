@@ -16,3 +16,6 @@
 .dropdown-container {
   padding-left: 8px;
 }
+.accordion-header a {
+  text-decoration: none;
+}
