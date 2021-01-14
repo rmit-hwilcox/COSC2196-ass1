@@ -9,22 +9,24 @@
   </head>
   <body>
     <div class="sidenav1">
-          <nav id="funkynav" class="nav flex-column accordian">
+          <nav class="nav flex-column">
+            <div class="accordian" id="funnkynav">
             <a class="nav-link" href="#">Personal Information</a>
             <a class="nav-link" href="#">Interest in IT</a>
             <a class="nav-link" href="#">Ideal Job</a>
-            <a data-toggle="collapse" data-target="#collapseOne" class="nav-link dropdown-btn collapsed" href="#">Personal Profile</a>
-            <div id="collapseOne" data-parent="#funkynav" class="dropdown-container collapse">
+            <a data-toggle="collapse" data-target="#collapseOne" data-parent="#funkynav" class="nav-link dropdown-btn collapsed" href="#collapseOne">Personal Profile</a>
+            <div id="collapseOne" class="dropdown-container collapse">
               <a class="nav-link" href="#">Link 1</a>
               <a class="nav-link "href="#">Link 2</a>
               <a class="nav-link" href="#">Link 3</a>
             </div>
-            <a data-toggle="collapse" data-target="#collapseTwo" class="nav-link dropdown-btn collapsed" href="#">Project Idea</a>
-            <div id="collapseTwo" data-parent="#funkynav" class="dropdown-container collapse">
+            <a data-toggle="collapse" data-target="#collapseTwo" data-parent="#funkynav" class="nav-link dropdown-btn collapsed" href="#collapseTwo">Project Idea</a>
+            <div id="collapseTwo" class="dropdown-container collapse">
               <a class="nav-link" href="#">Link 1</a>
               <a class="nav-link "href="#">Link 2</a>
               <a class="nav-link" href="#">Link 3</a>
             </div>
+          </div>
           </nav>
     </div>
 
