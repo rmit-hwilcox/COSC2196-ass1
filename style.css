@@ -13,12 +13,15 @@
   margin-left: 200px;
   padding: 0px 10px;
 }
+
 .dropdown-container {
   padding-left: 8px;
 }
+
 .accordion-header a {
   text-decoration: none;
 }
+
 .sidenav1 .accordion-button {
   color: unset;
   border: none;
