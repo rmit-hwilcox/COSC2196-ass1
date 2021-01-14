@@ -21,6 +21,7 @@
 }
 .sidenav1 .accordion-button {
   color: unset;
+  border: none;
 }
 .accordion-item a {
     text-decoration: unset;
