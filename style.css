@@ -10,7 +10,7 @@
 }
 
 .profilemain {
-  margin-left: 200px;
+  margin-left: 272px;
   padding: 0px 10px;
 }
 
@@ -25,7 +25,7 @@
 .sidenav1 .accordion-button {
   color: unset;
   border: none;
-  padding: 4px 4px 4px 16px;
+  padding: 6px 4px 6px 40px;
 }
 
 .sidenav1 .accordion-item a {
@@ -47,4 +47,10 @@
 
 .profimg {
   border-raius: 50%;
+  margin: 0px 20px 20px 20px;
+  width: 12em
+}
+
+.sidenav1 .nav-link {
+  padding: 6px 4px 6px 40px;
 }
