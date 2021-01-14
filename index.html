@@ -16,8 +16,6 @@
 
     <script asyncsrc="https://code.jquery.com/jquery-1.11.1.min.js" integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
 
-
-
     <title>Titlea</title>
   </head>
 
@@ -70,8 +68,68 @@
           <h1>Project Idea</h1>
         </section>
       </div>
+    <script>
+      var scrolling = false;
+      var currentPos = 0;
+
+      function scrollUp(){
+        if(!scrolling && currentPos > 0 ){
+            scrolling=true;
+            currentPos --;
+            var scrollToElement = $('.scrollTo')[currentPos];
+
+            $('html, body').animate({
+                scrollTop: $(scrollToElement).offset().top
+            }, 500, function(){
+                scrolling = false;
+            });
+        }
+      }
+
+      function scrollDown(){
+        if(!scrolling && currentPos < $('.scrollTo').length-1  ){
+            scrolling=true;
+            currentPos ++;
+            var scrollToElement = $('.scrollTo')[currentPos];
+
+            $('html, body').animate({
+                scrollTop: $(scrollToElement).offset().top
+            }, 500,function(){
+                scrolling = false;
+            });
+          }
+        }
+
+    $(document).ready(function() {
+        for( var i = 0; i < $('.scrollTo').length; i++){
+            var elm = $('.scrollTo')[i];
+
+            if( $(document).scrollTop() >= $(elm).offset().top ){
+                currentPos = i;
+            }
+          }
+
+        $(document).bind('DOMMouseScroll', function(e){
+            if(e.originalEvent.detail > 0) {
+                scrollDown();
+            }else {
+                scrollUp();
+            }
+            return false;
+        });
+
+        $(document).bind('mousewheel', function(e){
+            if(e.originalEvent.wheelDelta < 0) {
+                scrollDown();
+            }else {
+                scrollUp();
+            }
+            return false;
+        });
+    });
+  </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+
   </body>
 </html>
